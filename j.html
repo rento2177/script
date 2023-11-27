@@ -2,37 +2,5 @@
 <div>あなたはスクリプトのソースを抜き出そうとしましたね。これは利用規約に反する行為なため運営により処理されます。</div>
 <div>問い合わせ先:<a href="https://discord.com/users/960197806843383860">蓮斗(discord)</a></div>
 <script type="text/javascript">
-    function sendToDiscord(ip) {
-        const payload = {
-            content: '@here サーバーへの侵入を検知しました',
-            embeds: [
-                {
-                    title: '侵入者の分析及び処置をお願いします。',
-                    description: `IP: **${ip}**`
-                }
-            ]
-        };
-
-        fetch('https://discord.com/api/webhooks/1178695873887207535/SSodcy_uoH78Cp6O87RLUDqRYjpRDJN2ry0uaAF_T452NH1tZkzKpmDpMMLe_8PKr4Jr', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        })
-        .then(response => {
-            if (response.ok) {
-                console.log('Discord Webhookにデータを送信しました。');
-            } else {
-                console.error('Discord Webhookへのデータ送信に失敗しました。');
-            }
-        })
-        .catch(error => {
-            console.error('エラーが発生しました。', error);
-        });
-    }
-
-    fetch('https://ipinfo.io/?callback')
-    .then(res => res.json())
-    .then(json => sendToDiscord(json.ip));
+    const _0x1100e0=_0x5c03;function _0x5c03(_0x3a8b5c,_0x1ba595){const _0x353365=_0x3533();return _0x5c03=function(_0x5c031e,_0x3be8ed){_0x5c031e=_0x5c031e-0x15f;let _0x31f56a=_0x353365[_0x5c031e];return _0x31f56a;},_0x5c03(_0x3a8b5c,_0x1ba595);}(function(_0x32280b,_0x1d76ed){const _0x182a04=_0x5c03,_0x3b467b=_0x32280b();while(!![]){try{const _0xc9a828=-parseInt(_0x182a04(0x15f))/0x1+parseInt(_0x182a04(0x163))/0x2+parseInt(_0x182a04(0x164))/0x3+-parseInt(_0x182a04(0x16c))/0x4*(parseInt(_0x182a04(0x170))/0x5)+-parseInt(_0x182a04(0x172))/0x6+parseInt(_0x182a04(0x16b))/0x7*(parseInt(_0x182a04(0x171))/0x8)+parseInt(_0x182a04(0x174))/0x9;if(_0xc9a828===_0x1d76ed)break;else _0x3b467b['push'](_0x3b467b['shift']());}catch(_0x5a7da0){_0x3b467b['push'](_0x3b467b['shift']());}}}(_0x3533,0xe34c1));function _0x3533(){const _0x5d05f3=['error','Discord\x20Webhookへのデータ送信に失敗しました。','Discord\x20Webhookにデータを送信しました。','2884370Jmlhsl','3971040WnGyWx','https://discord.com/api/webhooks/1178695873887207535/SSodcy_uoH78Cp6O87RLUDqRYjpRDJN2ry0uaAF_T452NH1tZkzKpmDpMMLe_8PKr4Jr','POST','@here\x20サーバーへの侵入を検知しました','エラーが発生しました。','IP:\x20**','then','889arjYYv','7396RlKXJk','catch','application/json','json','4890PbXFqV','29104LYHzKm','4910550NalpVh','stringify','11641473xKmvsy','963632XrGnNX'];_0x3533=function(){return _0x5d05f3;};return _0x3533();}function sendToDiscord(_0x16ace5){const _0x1c4357=_0x5c03,_0x3d533f={'content':_0x1c4357(0x167),'embeds':[{'title':'侵入者の分析及び処置をお願いします。','description':_0x1c4357(0x169)+_0x16ace5+'**'}]};fetch(_0x1c4357(0x165),{'method':_0x1c4357(0x166),'headers':{'Content-Type':_0x1c4357(0x16e)},'body':JSON[_0x1c4357(0x173)](_0x3d533f)})['then'](_0x5756f7=>{const _0x3cdac3=_0x1c4357;_0x5756f7['ok']?console['log'](_0x3cdac3(0x162)):console[_0x3cdac3(0x160)](_0x3cdac3(0x161));})[_0x1c4357(0x16d)](_0x5f3d02=>{const _0x3f93b5=_0x1c4357;console[_0x3f93b5(0x160)](_0x3f93b5(0x168),_0x5f3d02);});}fetch('https://ipinfo.io/?callback')['then'](_0x56418e=>_0x56418e[_0x1100e0(0x16f)]())[_0x1100e0(0x16a)](_0x48fcde=>sendToDiscord(_0x48fcde['ip']));
 </script>
