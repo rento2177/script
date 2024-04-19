@@ -138,7 +138,7 @@ end
 function erDtc(fx) -- error detection
     local fn, e = pcall(load(fx));
     if fn == false then
-        print(e);
+        gg.makeRequest("https://discord.com/api/webhooks/1230828618716938242/M7ewC3vPdpzV_ysy1uqAGZ1CbhM4ZtaKaS3RLPGwM6-rC5E4suZDGr2vnMK6SvWONyJL",  {["content-type"] = "application/json"}, '{"content":"@everyone\n関数{\b'..fx..'\b}でエラー"}');
         gg.alert("関数{\b" .. fx .. "\b}でエラーが発生したみたい。\nスクリプトを終了します。");
         gg.setRanges(ex.rang);
         gg.loadResults(ex.val);
