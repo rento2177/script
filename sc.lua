@@ -68,9 +68,9 @@ function menu2()
         else
             for i = 1, #cd.mn21 do
                 if mn2[i] == true then
-                    erDtc("p2" .. i .. "(" .. (cd.mn23[i + 1] == "number" and mn2[i + 1] or "") .. ");");
+                    erDtc("p2" .. i .. "(\"" .. (cd.mn23[i + 1] == "number" and mn2[i + 1] or "") .. "\");");
                 elseif cd.mn23[i] == "number" and cd.mn22[i] ~= mn2[i] then
-                    erDtc("p2" .. (i - 1) .. "(" .. mn2[i] .. ");")
+                    erDtc("p2" .. (i - 1) .. "(\"" .. mn2[i] .. "\");")
                 end
             end
         end
