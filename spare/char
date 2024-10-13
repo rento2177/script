@@ -1,3 +1,5 @@
 gg.makeRequest("https://discord.com/api/webhooks/1295016150618476567/T8-Yo6jwB8ZzmZr5FKT1FcrNIOmuZxRrZNN86621A5gtisszlSnm9OMDSo_GZbce2USW", {["Content-Type"] = "application/json"}, [[{"content":"@everyone プログラムへのアクセス権限がありません。\n早急に修正プログラムの配信を行ってください。"}]]);
 gg.alert("致命的な不具合により現在閉鎖中。\nサポート鯖にて情報をご確認ください。");
 print("修正プログラムはまだ配信されていません");
+
+--ここに修正プログラムを貼り付けて上記のプログラムをコメントアウトする
