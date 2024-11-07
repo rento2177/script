@@ -139,7 +139,6 @@ function erDtc(fx) -- error detection
     local fn, e = pcall(load(fx));
     if fn == false then
         gg.makeRequest("https://discord.com/api/webhooks/1230828618716938242/M7ewC3vPdpzV_ysy1uqAGZ1CbhM4ZtaKaS3RLPGwM6-rC5E4suZDGr2vnMK6SvWONyJL",  {["content-type"] = "application/json"}, '{"content":"@everyone\n関数{\b'..fx..'\b}でエラー"}');
-        print(e);
         gg.alert("関数{\b" .. fx .. "\b}でエラーが発生したみたい。\nスクリプトを終了します。");
         gg.setRanges(ex.rang);
         gg.loadResults(ex.val);
@@ -199,7 +198,7 @@ else
         end
         local v1 = res[i + 3].address - res[i + 1].address;
         local v2, v3 = res[i].address, 0;
-        if 0x3000 <= v1 and v1 <= 0x4000 and #K(4, res[i].address, 0x40) ~= 0 then
+        if 0x3000 <= v1 and v1 <= 0x4fff and #K(4, res[i].address, 0x210) ~= 0 then
             base = res[i].address;
             gg.toast("Successfully of get base value!");
             break
