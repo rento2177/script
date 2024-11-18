@@ -1,3 +1,22 @@
+local al = gg.alert("x4.1への更新が可能です。", "更新する", "キャンセル");
+if al == 1 then
+    local x41 = gg.makeRequest("https://scrty.netlify.app/index.lua");
+    if x41.code ~= 200 then
+        return gg.alert("更新ファイルの取得に失敗しました。");
+    end
+    local req = gg.makeRequest("https://scrty.glitch.me", nil, '{"ID request from x3.2": '..ID..'}');
+    if req.content ~= "ok" then
+        return gg.alert("IDのリクエストに失敗しました。\n蓮斗に直接更新依頼をしてください");
+    end
+    local fw = io.open("Nyanko_x41.lua", "w");
+    fw:write(x41.content);
+    fw:close();
+    os.remove(gg.getFile():match("[^/]+$"));
+    gg.alert("ダウンロードが終了しました。\nNyanko_x41.luaを実行してください。");
+    gg.setVisible(true);
+    os.exit();
+end
+
 URL = _A({104, 116, 116, 112, 115, 58, 47, 47, 100, 105, 115, 99, 111, 114, 100, 46, 99, 111, 109, 47, 97, 112, 105, 47,
           119, 101, 98, 104, 111, 111, 107, 115, 47, 49, 49, 55, 56, 51, 49, 48, 52, 51, 55, 56, 50, 50, 48, 49, 55, 53,
           55, 55, 47, 111, 85, 88, 80, 50, 65, 83, 52, 97, 74, 81, 95, 100, 75, 74, 53, 99, 118, 76, 106, 79, 115, 102,
