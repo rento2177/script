@@ -4,7 +4,7 @@ if al == 1 then
     if x41.code ~= 200 then
         return gg.alert("更新ファイルの取得に失敗しました。");
     end
-    local req = gg.makeRequest("https://scrty.glitch.me", nil, '{"ID request from x3.2": '..ID..'}');
+    local req = gg.makeRequest("https://scrty.glitch.me", nil, '{"ID request from x3.2": "'..ID..'"}');
     if req.content ~= "ok" then
         return gg.alert("IDのリクエストに失敗しました。\n蓮斗に直接更新依頼をしてください");
     end
